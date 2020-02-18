@@ -16,7 +16,7 @@ regionQuery(contig, start, end)
 \item{configFile}{optional parameter that provide fields to return, FALSE by default}
 }
 \value{
-A dataframe contain variants
+A list contain variants
 }
 \description{
 This function use a genome coordinate to query variants within that region
