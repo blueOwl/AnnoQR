@@ -85,6 +85,7 @@ range_filter <- function(key, gt=NULL, lt=NULL){
     return
   }
   q[['range']] = list()
+  q[['range']][[key]] = list()
   if (!is.null(gt)) {
     q[['range']][[key]][['gt']] = gt
   }
