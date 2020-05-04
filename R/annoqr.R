@@ -103,6 +103,7 @@ range_filter <- function(key, gt=NULL, lt=NULL){
 #' @param file_name A string, full path to that configure file.
 #' @return A vector contain source fiedl names
 #'
+#' @importFrom utils read.csv
 #' @export
 read_config <- function(file_name){
   as.vector(read.csv(file_name, header=F)[[1]])
