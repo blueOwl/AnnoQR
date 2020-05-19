@@ -61,10 +61,10 @@ exists_filter <- function(key){
 #' @return A filter
 #'
 #' @export
-term_filter <- function(key, val){
+term_filter <- function(key, value){
   q = list()
   q[['term']] = list()
-  q[['term']][[key]] = tolower(val)
+  q[['term']][[key]] = tolower(value)
   q
 }
 
@@ -105,7 +105,7 @@ range_filter <- function(key, gt=NULL, lt=NULL){
 #'
 #' @export
 read_config <- function(file_name){
-  as.vector(read.csv(file_name, header=F)[[1]])
+  unlist(read_json(file_name)[['_source']])
 }
 
 #' add_query_filter
