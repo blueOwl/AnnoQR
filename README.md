@@ -2,7 +2,7 @@
 
 ## Introdcution
 
-todo
+This is an R client for performing queries with AnnoQ API.
 
 ## Installation
 
